@@ -38,8 +38,8 @@ export default function LandingPage() {
 
       {/* Features Grid */}
       <section className="px-6 pb-24 max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
+        <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex-1 bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
             <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-5">
               <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -51,7 +51,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
+          <div className="flex-1 bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
             <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-5">
               <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
@@ -63,7 +63,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
+          <div className="flex-1 bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-colors">
             <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-5">
               <svg className="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />

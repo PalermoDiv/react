@@ -116,8 +116,8 @@ function RegistrationFormDemo() {
         </div>
 
         {/* Password row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex-1">
             <label className="block text-sm text-gray-300 mb-1">Password</label>
             <input
               type="password"
@@ -129,7 +129,7 @@ function RegistrationFormDemo() {
             />
             {errors.password && <p className="text-red-400 text-sm mt-1">{errors.password}</p>}
           </div>
-          <div>
+          <div className="flex-1">
             <label className="block text-sm text-gray-300 mb-1">Confirm Password</label>
             <input
               type="password"

@@ -35,12 +35,12 @@ export default function Dashboard() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-6">
           {blueprints.map((bp) => (
             <Link
               key={bp.path}
               to={bp.path}
-              className="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 transition-all group"
+              className="flex-1 md:basis-[calc(50%-0.75rem)] bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 transition-all group"
             >
               <h2 className="text-2xl font-semibold text-white group-hover:text-indigo-400 transition-colors mb-2">
                 {bp.title}

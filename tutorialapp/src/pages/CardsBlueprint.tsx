@@ -146,11 +146,11 @@ export default function CardsBlueprint() {
         {filteredBooks.length === 0 ? (
           <p className="text-center text-gray-400 text-lg py-12">No books match your search.</p>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap gap-6">
             {filteredBooks.map((book) => (
               <div
                 key={book.id}
-                className="bg-gray-900 border border-gray-700 rounded-xl p-5 flex flex-col gap-3 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 transition-all"
+                className="flex-1 sm:flex-none sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-0.75rem)] xl:w-[calc(25%-0.75rem)] bg-gray-900 border border-gray-700 rounded-xl p-5 flex flex-col gap-3 hover:border-indigo-500 hover:shadow-lg hover:shadow-indigo-500/10 transition-all"
               >
                 <div className="flex justify-between items-start">
                   <span className="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-400/10 px-2 py-1 rounded">

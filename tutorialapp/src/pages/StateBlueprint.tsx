@@ -77,7 +77,7 @@ function SharedCounterDemo() {
         Both counters below share the same state because it lives in their parent.
         Clicking either one updates both.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <SharedCounterButton
           label="Counter A"
           count={count}
@@ -258,27 +258,27 @@ function DerivedStateDemo() {
         </button>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-        <div className="bg-gray-900 rounded-lg p-4">
+      <div className="flex flex-col sm:flex-row gap-4 mb-4">
+        <div className="flex-1 bg-gray-900 rounded-lg p-4">
           <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">Original</p>
           <p className="text-white font-mono">{items.join(', ')}</p>
         </div>
-        <div className="bg-gray-900 rounded-lg p-4">
+        <div className="flex-1 bg-gray-900 rounded-lg p-4">
           <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">Uppercased (derived)</p>
           <p className="text-white font-mono">{uppercased.join(', ')}</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
-        <div className="bg-gray-900 rounded-lg p-4 text-center">
+      <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex-1 bg-gray-900 rounded-lg p-4 text-center">
           <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">Total Letters</p>
           <p className="text-2xl font-bold text-indigo-400">{totalLetters}</p>
         </div>
-        <div className="bg-gray-900 rounded-lg p-4 text-center">
+        <div className="flex-1 bg-gray-900 rounded-lg p-4 text-center">
           <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">Avg Length</p>
           <p className="text-2xl font-bold text-emerald-400">{averageLength}</p>
         </div>
-        <div className="bg-gray-900 rounded-lg p-4 text-center">
+        <div className="flex-1 bg-gray-900 rounded-lg p-4 text-center">
           <p className="text-gray-400 text-xs uppercase tracking-wider mb-1">Longest</p>
           <p className="text-xl font-bold text-yellow-400">{longestItem}</p>
         </div>
@@ -305,11 +305,11 @@ export default function StateBlueprint() {
           <p className="text-gray-400 text-sm mb-4">
             Each counter below has its own useState. They update independently.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <LocalCounter label="Counter 1" />
-            <LocalCounter label="Counter 2" />
-            <LocalCounter label="Counter 3" />
-            <LocalCounter label="Counter 4" />
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+            <div className="flex-1 sm:basis-[calc(50%-0.5rem)]"><LocalCounter label="Counter 1" /></div>
+            <div className="flex-1 sm:basis-[calc(50%-0.5rem)]"><LocalCounter label="Counter 2" /></div>
+            <div className="flex-1 sm:basis-[calc(50%-0.5rem)]"><LocalCounter label="Counter 3" /></div>
+            <div className="flex-1 sm:basis-[calc(50%-0.5rem)]"><LocalCounter label="Counter 4" /></div>
           </div>
         </div>
 
