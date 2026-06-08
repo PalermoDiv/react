@@ -1,7 +1,8 @@
 import { Link, useLocation } from 'react-router-dom';
 
 const links = [
-  { path: '/', label: 'Dashboard' },
+  { path: '/', label: 'Home' },
+  { path: '/blueprints', label: 'Blueprints' },
   { path: '/forms', label: 'Forms' },
   { path: '/timer', label: 'Timer' },
   { path: '/cards', label: 'Cards' },

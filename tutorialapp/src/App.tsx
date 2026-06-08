@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Navbar from './components/Navbar';
+import LandingPage from './pages/LandingPage';
 import Dashboard from './pages/Dashboard';
 import FormsBlueprint from './pages/FormsBlueprint';
 import TimerBlueprint from './pages/TimerBlueprint';
@@ -12,7 +13,8 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/blueprints" element={<Dashboard />} />
         <Route path="/forms" element={<FormsBlueprint />} />
         <Route path="/timer" element={<TimerBlueprint />} />
         <Route path="/cards" element={<CardsBlueprint />} />
